@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SnapTune – Enhanced Music Streaming Client for Android | Background Playback & Offline Downloads</title>
+  <meta name="description"
+    content="SnapTune is a feature-rich music streaming client for Android with Material 3 design, background playback, offline downloads, live synchronized lyrics, and Spotify Rich Presence integration.">
+  <meta name="keywords"
+    content="SnapTune, YouTube Music, Android music player, offline music, background playback, live lyrics, Material 3, music streaming, Spotify Rich Presence, lyrics translation">
+  <meta name="author" content="farhanansari888">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#a78bfa">
+  <link rel="canonical" href="https://snaptune.indevs.in">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://snaptune.indevs.in">
+  <meta property="og:site_name" content="SnapTune">
+  <meta property="og:title" content="SnapTune – Enhanced Music Streaming Client for Android">
+  <meta property="og:description"
+    content="Enhanced Music Streaming Client for Android with background playback, offline downloads, live synchronized lyrics, and beautiful Material 3 theming.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/SnapTuneBanner.png">
+  <meta property="og:image:alt" content="SnapTune - Enhanced Music Streaming Client">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SnapTune – Enhanced Music Streaming Client for Android">
+  <meta name="twitter:description"
+    content="Enhanced Music Streaming Client for Android with background playback, offline downloads, live synchronized lyrics, and beautiful Material 3 theming.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/SnapTuneBanner.png">
+  <meta name="twitter:image:alt" content="SnapTune interface showcasing music player features">
+
+  <!-- Additional Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SnapTune">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="SnapTune">
+  <meta name="format-detection" content="telephone=no">
+
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://snaptune.indevs.in/#app",
+      "name": "SnapTune",
+      "alternateName": "SnapTune Music Player",
+      "description": "SnapTune is a modern Android music streaming client featuring ad-free playback, offline downloads, synchronized lyrics, dynamic theming, and deep customization.",
+      "url": "https://snaptune.indevs.in",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "MusicApplication",
+      "operatingSystem": "Android 8.0+",
+      "inLanguage": "en",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://github.com/farhanansari888/SnapTune/releases/latest/download/SnapTune.apk",
+      "softwareVersion": "latest",
+      "sameAs": [
+        "https://github.com/farhanansari888/SnapTune"
+      ],
+      "image": {
+        "@id": "https://snaptune.indevs.in/#primaryimage"
+      },
+      "featureList": [
+        "Ad-free music streaming",
+        "Background playback",
+        "Offline downloads",
+        "Live synchronized lyrics",
+        "Material 3 design",
+        "Theme customization",
+        "Discord Rich Presence",
+        "Lyrics translation"
+      ],
+      "screenshot": [
+        "https://raw.githubusercontent.com/farhanansari888/SnapTune/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_1.jpg",
+        "https://raw.githubusercontent.com/farhanansari888/SnapTune/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_2.jpg",
+        "https://raw.githubusercontent.com/farhanansari888/SnapTune/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_3.jpg"
+      ],
+      "author": {
+        "@id": "https://snaptune.indevs.in/#organization"
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2026-06-22",
+      "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+      "publisher": {
+        "@id": "https://snaptune.indevs.in/#organization"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://snaptune.indevs.in/#primaryimage",
+      "url": "https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/SnapTuneBanner.png",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://snaptune.indevs.in/#organization",
+      "name": "SnapTune",
+      "url": "https://github.com/farhanansari888/SnapTune",
+      "logo": "https://snaptune.indevs.in/favicon.png",
+      "sameAs": [
+        "https://github.com/farhanansari888/SnapTune"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://snaptune.indevs.in/#website",
+      "name": "SnapTune",
+      "url": "https://snaptune.indevs.in",
+      "description": "Modern music streaming client for Android",
+      "publisher": {
+        "@id": "https://snaptune.indevs.in/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://snaptune.indevs.in/#webpage",
+      "url": "https://snaptune.indevs.in",
+      "name": "SnapTune – Your Music, Reimagined",
+      "description": "Ad-free Android music streaming with offline downloads, synced lyrics, and premium Material 3 UI.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://snaptune.indevs.in/#website"
+      },
+      "about": {
+        "@id": "https://snaptune.indevs.in/#app"
+      }
+    }
+  ]
+}
+</script>
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="favicon.png" type="image/svg+xml" sizes="any">
+  <link rel="shortcut icon" href="favicon.png" type="image/png" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  
+  <header class="site-header">
+    <div class="brand">
+      <img src="/assets/logo.svg" alt="SnapTune" class="logo">
+      <h1>
+        <span class="brand-snap">Snap</span><span class="brand-tune">Tune</span>
+      </h1>
+    </div>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+    <nav class="nav" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#updates">Updates</a>
+      <a href="#download" class="cta">Download</a>
+    </nav>
+  </header>
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <main class="hero">
+    <section class="hero-content glass" data-aos="fade-up">
+      <div class="hero-left">
+        <div class="badge" data-aos="fade-up" data-aos-delay="100">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <span id="repo-badge-text">Material 3 Expressive Design</span>
+        </div>
+        <h2 data-aos="fade-up" data-aos-delay="200">Your Music, Reimagined with SnapTune</h2>
+<p class="lead" id="repo-lead" data-aos="fade-up" data-aos-delay="300">
+Enjoy music without limits with SnapTune — ad-free streaming, seamless background playback, offline downloads, synced lyrics, and a stunning modern UI inspired by Material 3.
+</p>
+
+        <div class="repo-topics" id="repo-topics" aria-label="Repository topics"></div>
+
+        <div class="stats" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-item">
+            <div class="stat-value" id="latest-version">—</div>
+            <div class="stat-label">Latest Version</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Android 8+</div>
+            <div class="stat-label">Compatibility</div>
+          </div>
+        </div>
+
+        <div class="actions" data-aos="fade-up" data-aos-delay="500">
+          <a href="https://github.com/farhanansari888/SnapTune/releases/download/v2.0.0/SnapTune-v2.0.0.apk" class="button primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/></svg>
+            Download
+          </a>
+          <a href="https://github.com/farhanansari888/SnapTune/releases" class="button ghost" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="download-badges">
+          <a href="https://snaptune.en.uptodown.com/android" target="_blank" rel="noopener">
+            <img src="https://stc.utdstc.com/img/mediakit/download-gio-big.png" alt="Get it on Uptodown" height="60">
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right" data-aos="fade-left" data-aos-delay="400">
+        <div class="phone-mockup" aria-roledescription="carousel">
+          <div class="carousel">
+            <div class="slide active"><img src="https://github.com/farhanansari888/SnapTune/blob/main/resources/imgs/1-dark.png?raw=true" alt="Home screen with music library" loading="eager" decoding="async" fetchpriority="high" width="280" height="560"></div>
+            <div class="slide"><img data-src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/5.png" src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'280'%20height%3D'560'%20viewBox%3D'0%200%20280%20560'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20y1%3D'0'%20x2%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%2310162a'%2F%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23060a16'%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D'280'%20height%3D'560'%20rx%3D'24'%20fill%3D'url(%23g)'%2F%3E%3C%2Fsvg%3E" alt="Now playing with live lyrics" loading="lazy" decoding="async" width="280" height="560"></div>
+            <div class="slide"><img data-src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/9.png" src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'280'%20height%3D'560'%20viewBox%3D'0%200%20280%20560'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20y1%3D'0'%20x2%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%2310162a'%2F%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23060a16'%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D'280'%20height%3D'560'%20rx%3D'24'%20fill%3D'url(%23g)'%2F%3E%3C%2Fsvg%3E" alt="Song details and options" loading="lazy" decoding="async" width="280" height="560"></div>
+            <div class="slide"><img data-src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/11.png" src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'280'%20height%3D'560'%20viewBox%3D'0%200%20280%20560'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20y1%3D'0'%20x2%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%2310162a'%2F%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23060a16'%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D'280'%20height%3D'560'%20rx%3D'24'%20fill%3D'url(%23g)'%2F%3E%3C%2Fsvg%3E" alt="Search interface" loading="lazy" decoding="async" width="280" height="560"></div>
+            <div class="slide"><img data-src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/acc.png" src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'280'%20height%3D'560'%20viewBox%3D'0%200%20280%20560'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20y1%3D'0'%20x2%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%2310162a'%2F%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23060a16'%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D'280'%20height%3D'560'%20rx%3D'24'%20fill%3D'url(%23g)'%2F%3E%3C%2Fsvg%3E" alt="Settings and customization" loading="lazy" decoding="async" width="280" height="560"></div>
+            <div class="slide"><img data-src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/thh.png" src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'280'%20height%3D'560'%20viewBox%3D'0%200%20280%20560'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20y1%3D'0'%20x2%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%2310162a'%2F%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23060a16'%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D'280'%20height%3D'560'%20rx%3D'24'%20fill%3D'url(%23g)'%2F%3E%3C%2Fsvg%3E" alt="Theme customization" loading="lazy" decoding="async" width="280" height="560"></div>
+          </div>
+          <button class="carousel-control prev" aria-label="Previous slide">‹</button>
+          <button class="carousel-control next" aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+
+  <section id="features" class="section features">
+      <h3 data-aos="fade-up">Features</h3>
+      <div class="cards">
+        <article class="card glass">
+          <h4>
+            <img class="feature-icon" src="/assets/icons/download.svg" alt="offline downloads icon">
+            <span class="feature-title" data-feature-title="0">Offline downloads</span>
+          </h4>
+          <p data-feature-desc="0">Cache songs for offline playback with configurable quality and storage management.</p>
+        </article>
+        <article class="card glass">
+          <h4>
+            <img class="feature-icon" src="/assets/icons/lyrics.svg" alt="live lyrics icon">
+            <span class="feature-title" data-feature-title="1">Live lyrics</span>
+          </h4>
+          <p data-feature-desc="1">Follow along with synchronized lyrics in the player and lock screen widgets.</p>
+        </article>
+        <article class="card glass">
+          <h4>
+            <img class="feature-icon" src="/assets/icons/theme.svg" alt="themeable ui icon">
+            <span class="feature-title" data-feature-title="2">Themeable UI</span>
+          </h4>
+          <p data-feature-desc="2">Light, dark, black and dynamic themes built on Material 3 design.</p>
+        </article>
+        <article class="card glass">
+          <h4>
+            <img class="feature-icon" src="/assets/icons/presence.svg" alt="discord presence icon">
+            <span class="feature-title" data-feature-title="3">Highly Customizable</span>
+          </h4>
+          <p data-feature-desc="3">Tailor the app to your preferences with extensive customization options for every aspect of the user interface.</p>
+        </article>
+        <article class="card glass">
+          <h4>
+            <img class="feature-icon" src="/assets/icons/translate.svg" alt="smart rpc translation icon">
+            <span class="feature-title" data-feature-title="4">Background Playback</span>
+          </h4>
+          <p data-feature-desc="4">Listen to your favorite tracks even when the app is closed, with seamless background playback.</p>
+        </article>
+        <article class="card glass">
+          <h4>
+            <img class="feature-icon" src="/assets/icons/lyrics-translate.svg" alt="lyrics translation icon">
+            <span class="feature-title" data-feature-title="5">Lyrics Translation Support</span>
+          </h4>
+          <p data-feature-desc="5">Translate lyrics directly inside SnapTune so listeners can follow along in their preferred language.</p>
+        </article>
+      </div>
+    </section>
+
+  <section id="screenshots" class="section screenshots">
+      <div class="section-header" data-aos="fade-up">
+        <h3>See It In Action</h3>
+        <p class="section-subtitle">Beautiful, intuitive interface designed for music lovers</p>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+          <img src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/1-dark.png" alt="Music library home screen" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Music Player</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+          <img src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/5.png" alt="Now playing with lyrics" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Live Lyrics</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/9.png" alt="Song options and details" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Theme Customization</span>
+          </div>
+        </div>
+      </div>
+      <div class="feature-banner" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/SnapTuneBanner.png" alt="SnapTune feature showcase" loading="lazy">
+      </div>
+    </section>
+
+    <section id="updates" class="section updates">
+      <div class="section-header" data-aos="fade-up">
+        <h3>Live from GitHub</h3>
+        <p class="section-subtitle">Latest releases, development updates, and project status — all in one place</p>
+      </div>
+
+      <div class="updates-grid">
+        <article class="update-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="update-header">
+            <div class="update-title">
+              <h4>Latest Release</h4>
+              <div class="update-meta">
+                <span class="pill" id="release-tag">—</span>
+                <span class="separator">•</span>
+                <span id="release-date">—</span>
+              </div>
+            </div>
+            <a class="update-link" id="release-link" href="https://github.com/farhanansari888/SnapTune/releases" target="_blank" rel="noopener">View</a>
+          </div>
+          <div class="update-body" id="release-notes">—</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="download" class="section download">
+      <div class="download-container glass" data-aos="fade-up">
+        <div class="section-header">
+          <h3>Get SnapTune</h3>
+          <p class="section-subtitle">Choose the version that's right for you</p>
+        </div>
+        
+        <div class="download-options">
+          <div class="download-option" data-aos="fade-up" data-aos-delay="0">
+            <div class="download-badge stable">Recommended</div>
+            <h4>Stable Release</h4>
+            <p>Production-ready build, thoroughly tested and optimized for daily use. Perfect for users who want reliability.</p>
+            <div class="download-meta">
+              <span class="version" id="download-version">—</span>
+              <span class="separator">•</span>
+              <span class="size" id="download-size">—</span>
+            </div>
+            <a class="button primary" href="https://github.com/farhanansari888/SnapTune/releases/download/v2.0.0/SnapTune-v2.0.0.apk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+              </svg>
+              Download Stable APK
+            </a>
+          </div>
+        </div>
+
+        <div class="download-alternatives">
+          <h4>Other Options</h4>
+          <div class="alt-links">
+            <a href="https://snaptune.en.uptodown.com/android" target="_blank" rel="noopener" class="alt-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M1.5 6v12c0 1.1.9 2 2 2h17c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-17c-1.1 0-2 .9-2 2zm19 12h-17V6h17v12z"/>
+              </svg>
+              Download from Uptodown
+            </a>
+            <a href="https://github.com/farhanansari888/SnapTune/releases" target="_blank" rel="noopener" class="alt-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              All Releases on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer glass" data-aos="fade-up">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="/assets/logo.svg" alt="SnapTune" class="footer-logo">
+            <div>
+              <strong>SnapTune</strong>
+              <p id="footer-tagline">Enhanced Music Streaming for Android</p>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <div class="footer-column">
+              <h5>Project</h5>
+              <a href="https://github.com/farhanansari888/SnapTune/releases" target="_blank" rel="noopener">Releases</a>
+            </div>
+            <div class="footer-column">
+              <h5>Community</h5>
+              <a href="https://github.com/farhanansari888/SnapTune/" target="_blank" rel="noopener">Github</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <small>
+            Made with <span style="color: #f472b6;">❤</span> by Farhan Ansari • 
+            Not affiliated with YouTube or Google
+          </small>
+        </div>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
