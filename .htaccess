@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Route /privacy to privacy.html
+RewriteRule ^privacy/?$ privacy.html [L]
+
+# Route /donate to donate.html
+RewriteRule ^donate/?$ donate.html [L]
+
+# Clean URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+</IfModule>

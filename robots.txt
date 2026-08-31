@@ -1,4 +1,6 @@
+# robots.txt for SnapTune (https://snaptune.indevs.in)
 User-agent: *
 Allow: /
 
+# Direct links to sitemap
 Sitemap: https://snaptune.indevs.in/sitemap.xml

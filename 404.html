@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapTune — Redirecting</title>
+    <script>
+        (function () {
+            var rawPath = window.location.pathname;
+            var cleanPath = rawPath.replace(/\/+$/, '').toLowerCase();
+            var search = window.location.search || '';
+            var hash = window.location.hash || '';
+
+            if (cleanPath === '/privacy' || cleanPath.endsWith('/privacy')) {
+                window.location.replace('/privacy.html' + search + hash);
+                return;
+            }
+            if (cleanPath === '/donate' || cleanPath.endsWith('/donate')) {
+                window.location.replace('/donate.html' + search + hash);
+                return;
+            }
+
+            // Fallback check for any clean route
+            var segments = cleanPath.split('/').filter(Boolean);
+            var lastSegment = segments[segments.length - 1];
+            if (lastSegment && !lastSegment.includes('.')) {
+                window.location.replace('/' + lastSegment + '.html' + search + hash);
+                return;
+            }
+
+            // If not found, redirect to home page
+            window.location.replace('/' + search + hash);
+        })();
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background: #09071A;
+            color: #E6E1E5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        a {
+            color: #CAB4FF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Redirecting to SnapTune...</p>
+        <p><a href="/">Click here if not redirected automatically</a></p>
+    </div>
+</body>
+</html>

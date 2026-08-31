@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://snaptune.indevs.in/</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://snaptune.indevs.in/favicon.png</image:loc>
+      <image:title>SnapTune Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/SnapTuneBanner.png</image:loc>
+      <image:title>SnapTune Banner</image:title>
+    </image:image>
   </url>
-
+  <url>
+    <loc>https://snaptune.indevs.in/privacy.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://snaptune.indevs.in/donate.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
