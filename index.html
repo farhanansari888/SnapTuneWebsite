@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html id="app-root" lang="en">
+
 <head>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MM7NKQF8');</script>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-MM7NKQF8');</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SnapTune is a feature-rich music streaming client for Android with Material 3 design, background playback, offline downloads, live synchronized lyrics, and Spotify Rich Presence integration.">
-    <meta name="keywords" content="SnapTune, YouTube Music, Android music player, offline music, background playback, live lyrics, Material 3, music streaming, lyrics translation">
+    <meta name="description"
+        content="SnapTune is a feature-rich music streaming client for Android with Material 3 design, background playback, offline downloads, live synchronized lyrics, and Spotify Rich Presence integration.">
+    <meta name="keywords"
+        content="SnapTune, YouTube Music, Android music player, offline music, background playback, live lyrics, Material 3, music streaming, lyrics translation">
     <meta name="author" content="Farhan Ansari">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#CAB4FF">
@@ -16,591 +19,803 @@
     <meta property="og:url" content="https://snaptune.indevs.in">
     <meta property="og:site_name" content="SnapTune">
     <meta property="og:title" content="SnapTune — Enhanced Music Streaming Client for Android">
-    <meta property="og:description" content="Enhanced Music Streaming Client for Android with background playback, offline downloads, live synchronized lyrics, and beautiful Material 3 theming.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/SnapTuneBanner.png">
+    <meta property="og:description"
+        content="Enhanced Music Streaming Client for Android with background playback, offline downloads, live synchronized lyrics, and beautiful Material 3 theming.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/fastlane/metadata/android/en-US/images/SnapTuneBanner.png">
     <meta property="og:image:alt" content="SnapTune - Enhanced Music Streaming Client">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="SnapTune — Enhanced Music Streaming Client for Android">
-    <meta name="twitter:description" content="Enhanced Music Streaming Client for Android with background playback, offline downloads, live synchronized lyrics, and beautiful Material 3 theming.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/SnapTuneBanner.png">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://snaptune.indevs.in/#app","name":"SnapTune","description":"SnapTune is a modern Android music streaming client featuring ad-free playback, offline downloads, synchronized lyrics, dynamic theming, and deep customization.","url":"https://snaptune.indevs.in","applicationCategory":"MultimediaApplication","operatingSystem":"Android 8.0+","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"downloadUrl":"https://github.com/farhanansari888/SnapTune/releases/latest/download/SnapTune.apk","featureList":["Ad-free music streaming","Background playback","Offline downloads","Live synchronized lyrics","Material 3 design","Theme customization","Spotify account login & playlist access","SnapTune Together real-time rooms","Discord Rich Presence"]},{"@type":"Organization","@id":"https://snaptune.indevs.in/#organization","name":"SnapTune","url":"https://github.com/farhanansari888/SnapTune","logo":"https://snaptune.indevs.in/favicon.png"},{"@type":"WebSite","@id":"https://snaptune.indevs.in/#website","name":"SnapTune","url":"https://snaptune.indevs.in"}]}</script>
+    <meta name="twitter:description"
+        content="Enhanced Music Streaming Client for Android with background playback, offline downloads, live synchronized lyrics, and beautiful Material 3 theming.">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/fastlane/metadata/android/en-US/images/SnapTuneBanner.png">
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://snaptune.indevs.in/#app","name":"SnapTune","description":"SnapTune is a modern Android music streaming client featuring ad-free playback, offline downloads, synchronized lyrics, dynamic theming, and deep customization.","url":"https://snaptune.indevs.in","applicationCategory":"MultimediaApplication","operatingSystem":"Android 8.0+","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"downloadUrl":"https://github.com/farhanansari888/SnapTune/releases/latest/download/SnapTune.apk","featureList":["Ad-free music streaming","Background playback","Offline downloads","Live synchronized lyrics","Material 3 design","Theme customization","Spotify account login & playlist access","SnapTune Together real-time rooms","Discord Rich Presence"]},{"@type":"Organization","@id":"https://snaptune.indevs.in/#organization","name":"SnapTune","url":"https://github.com/farhanansari888/SnapTune","logo":"https://snaptune.indevs.in/favicon.png"},{"@type":"WebSite","@id":"https://snaptune.indevs.in/#website","name":"SnapTune","url":"https://snaptune.indevs.in"}]}</script>
     <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="stylesheet" href="css/styles.css?v=7.0.4">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,800;0,900;1,800&family=Outfit:wght@400;500;600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,800;0,900;1,800&family=Outfit:wght@400;500;600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="icon" href="favicon.png" type="image/png" sizes="any">
     <link rel="apple-touch-icon" href="favicon.png">
     <script src="js/bg.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
+
 <body class="bg-background text-on-surface">
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM7NKQF8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM7NKQF8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
 
 
-<!-- DIALOGS -->
-<dialog id="language-dialog" class="glass-dialog">
-    <div class="dialog-header">
-        <h2 class="font-bold text-on-surface text-lg" style="font-family:Epilogue,sans-serif" data-i18n="lang_dialog_title">Select Language</h2>
-        <button class="dialog-icon-btn" onclick="document.getElementById('language-dialog').close()" aria-label="Close"><span class="material-symbols-outlined">close</span></button>
-    </div>
-    <div class="dialog-content">
-        <div class="flex flex-col gap-1">
-            <button class="dialog-list-item" data-lang="en"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="EN" class="flag-icon"><span>English</span></button>
-            <button class="dialog-list-item" data-lang="es"><img src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="ES" class="flag-icon"><span>Español</span></button>
-            <button class="dialog-list-item" data-lang="pt"><img src="https://flagicons.lipis.dev/flags/4x3/br.svg" alt="PT" class="flag-icon"><span>Português</span></button>
-            <button class="dialog-list-item" data-lang="hi"><img src="https://flagicons.lipis.dev/flags/4x3/in.svg" alt="HI" class="flag-icon"><span>हिंदी</span></button>
+    <!-- DIALOGS -->
+    <dialog id="language-dialog" class="glass-dialog">
+        <div class="dialog-header">
+            <h2 class="font-bold text-on-surface text-lg" style="font-family:Epilogue,sans-serif"
+                data-i18n="lang_dialog_title">Select Language</h2>
+            <button class="dialog-icon-btn" onclick="document.getElementById('language-dialog').close()"
+                aria-label="Close"><span class="material-symbols-outlined">close</span></button>
         </div>
-    </div>
-</dialog>
-<dialog id="warning-dialog" class="glass-dialog">
-    <div class="dialog-header">
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary" style="font-size:20px">warning</span></div>
-            <h2 class="font-bold text-on-surface text-lg" style="font-family:Epilogue,sans-serif">Redirection Warning</h2>
+        <div class="dialog-content">
+            <div class="flex flex-col gap-1">
+                <button class="dialog-list-item" data-lang="en"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg"
+                        alt="EN" class="flag-icon"><span>English</span></button>
+                <button class="dialog-list-item" data-lang="es"><img src="https://flagicons.lipis.dev/flags/4x3/es.svg"
+                        alt="ES" class="flag-icon"><span>Español</span></button>
+                <button class="dialog-list-item" data-lang="pt"><img src="https://flagicons.lipis.dev/flags/4x3/br.svg"
+                        alt="PT" class="flag-icon"><span>Português</span></button>
+                <button class="dialog-list-item" data-lang="hi"><img src="https://flagicons.lipis.dev/flags/4x3/in.svg"
+                        alt="HI" class="flag-icon"><span>हिंदी</span></button>
+            </div>
         </div>
-    </div>
-    <div class="dialog-content"><p class="text-on-surface-variant" style="font-size:15px;line-height:1.65">You will be redirected to the official SnapTune releases page on GitHub.</p></div>
-    <div class="dialog-actions">
-        <button id="dismissBtn" class="dialog-text-btn" onclick="document.getElementById('warning-dialog').close()">Cancel</button>
-        <a href="https://github.com/farhanansari888/SnapTune/releases" target="_blank" class="dialog-filled-btn">Continue</a>
-    </div>
-</dialog>
+    </dialog>
+    <dialog id="warning-dialog" class="glass-dialog">
+        <div class="dialog-header">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-secondary" style="font-size:20px">warning</span>
+                </div>
+                <h2 class="font-bold text-on-surface text-lg" style="font-family:Epilogue,sans-serif">Redirection
+                    Warning</h2>
+            </div>
+        </div>
+        <div class="dialog-content">
+            <p class="text-on-surface-variant" style="font-size:15px;line-height:1.65">You will be redirected to the
+                official SnapTune releases page on GitHub.</p>
+        </div>
+        <div class="dialog-actions">
+            <button id="dismissBtn" class="dialog-text-btn"
+                onclick="document.getElementById('warning-dialog').close()">Cancel</button>
+            <a href="https://github.com/farhanansari888/SnapTune/releases" target="_blank"
+                class="dialog-filled-btn">Continue</a>
+        </div>
+    </dialog>
 
-<!-- NAVIGATION -->
-<div class="nav-wrapper" role="navigation" aria-label="Main navigation">
-    <nav class="nav-pill">
-        <a href="#" class="nav-logo">
-            <img id="logo" src="logo.svg" alt="SnapTune logo">
-            <span class="nav-logo-text">SnapTune</span>
-        </a>
-        <span class="nav-divider" aria-hidden="true"></span>
-        <div class="nav-links">
-            <a href="#features" class="nav-link" data-i18n="nav_features">Features</a>
-            <a href="#screenshots" class="nav-link" data-i18n="nav_screenshots">Screenshots</a>
-            <a href="#downloads" class="nav-link" data-i18n="nav_downloads">Downloads</a>
-            <a href="privacy.html" class="nav-link" data-i18n="nav_privacy">Privacy</a>
-            <a href="donate.html" class="nav-link" data-i18n="nav_donate">Donate</a>
-            <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="nav-link">GitHub</a>
-        </div>
-        <div class="nav-actions">
-            <button id="languageSelector" class="nav-icon-btn" aria-label="Select language" onclick="document.getElementById('language-dialog').showModal()">
-                <span class="material-symbols-outlined" style="font-size:20px">language</span>
-                <span id="languageText" class="hidden lg:inline text-sm font-semibold">EN</span>
-                <span class="material-symbols-outlined" style="font-size:16px">expand_more</span>
-            </button>
-            <a id="nav-download-btn" href="#downloads">
-                <span class="material-symbols-outlined" style="font-size:16px">download</span>
-                <span data-i18n="nav_download_btn">Download</span>
+    <!-- NAVIGATION -->
+    <div class="nav-wrapper" role="navigation" aria-label="Main navigation">
+        <nav class="nav-pill">
+            <a href="#" class="nav-logo">
+                <img id="logo" src="logo.svg" alt="SnapTune logo">
+                <span class="nav-logo-text">SnapTune</span>
             </a>
-            <button id="nav-hamburger" class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-            </button>
-        </div>
-    </nav>
-</div>
-
-<!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <div class="mobile-menu-inner">
-        <a href="#features"  class="mobile-menu-link" data-i18n="nav_features">Features</a>
-        <a href="#screenshots" class="mobile-menu-link" data-i18n="nav_screenshots">Screenshots</a>
-        <a href="#downloads"  class="mobile-menu-link" data-i18n="nav_downloads">Downloads</a>
-        <a href="privacy.html" class="mobile-menu-link" data-i18n="nav_privacy">Privacy</a>
-        <a href="donate.html" class="mobile-menu-link" data-i18n="nav_donate">Donate</a>
-        <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="mobile-menu-link">GitHub</a>
-        <div class="mobile-menu-actions">
-            <button class="btn-ghost" style="width:100%;justify-content:center" onclick="document.getElementById('language-dialog').showModal();document.getElementById('mobile-menu').classList.remove('is-open')">
-                <span class="material-symbols-outlined">language</span> Change Language
-            </button>
-            <a href="#downloads" class="btn-primary" style="width:100%;justify-content:center">
-                <span class="material-symbols-outlined">download</span>
-                <span data-i18n="nav_download_btn">Download</span>
-            </a>
-        </div>
-    </div>
-</div>
-
-<main>
-<!-- HERO -->
-<section class="hero-section" aria-labelledby="hero-heading">
-    <div class="hero-inner">
-        <div class="text-center lg:text-left">
-            <div class="hero-badge">
-                <span class="hero-badge-dot"><span class="material-symbols-outlined">verified</span></span>
-                Crafted by Farhan Ansari
+            <span class="nav-divider" aria-hidden="true"></span>
+            <div class="nav-links">
+                <a href="#features" class="nav-link" data-i18n="nav_features">Features</a>
+                <a href="#screenshots" class="nav-link" data-i18n="nav_screenshots">Screenshots</a>
+                <a href="#downloads" class="nav-link" data-i18n="nav_downloads">Downloads</a>
+                <a href="privacy.html" class="nav-link" data-i18n="nav_privacy">Privacy</a>
+                <a href="donate.html" class="nav-link" data-i18n="nav_donate">Donate</a>
+                <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="nav-link">GitHub</a>
             </div>
-            <h1 id="hero-heading" class="hero-title">
-                Music Freedom
-                <span class="gradient-text">with SnapTune</span>
-            </h1>
-            <p class="hero-sub" data-i18n="hero_subtitle">Ad-free streaming, background play, and offline music wrapped in Material 3.</p>
-            <div class="hero-stats justify-center lg:justify-start">
-                <div class="hero-stat-chip">
-                    <span class="hero-stat-icon text-primary material-symbols-outlined">new_releases</span>
-                    <div class="text-left"><span class="hero-stat-label">Latest Release</span><span id="hero-version-tag" class="hero-stat-value">v2.0.0</span></div>
-                </div>
-                <div class="hero-stat-chip">
-                    <span class="hero-stat-icon text-tertiary material-symbols-outlined">android</span>
-                    <div class="text-left"><span class="hero-stat-label">Compatibility</span><span class="hero-stat-value">Android 8.0+</span></div>
-                </div>
-                <div class="hero-stat-chip">
-                    <span class="hero-stat-icon text-secondary material-symbols-outlined">palette</span>
-                    <div class="text-left"><span class="hero-stat-label">Themes Available</span><span class="hero-stat-value">50+</span></div>
-                </div>
-            </div>
-            <div class="hero-ctas justify-center lg:justify-start">
-                <a id="hero-download-btn" href="#downloads" class="btn-primary">
-                    <span class="material-symbols-outlined">download</span>
-                    <span data-i18n="hero_download_apk">Download APK</span>
+            <div class="nav-actions">
+                <button id="languageSelector" class="nav-icon-btn" aria-label="Select language"
+                    onclick="document.getElementById('language-dialog').showModal()">
+                    <span class="material-symbols-outlined" style="font-size:20px">language</span>
+                    <span id="languageText" class="hidden lg:inline text-sm font-semibold">EN</span>
+                    <span class="material-symbols-outlined" style="font-size:16px">expand_more</span>
+                </button>
+                <a id="nav-download-btn" href="#downloads">
+                    <span class="material-symbols-outlined" style="font-size:16px">download</span>
+                    <span data-i18n="nav_download_btn">Download</span>
                 </a>
-                <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="btn-ghost">
-                    <span class="material-symbols-outlined">code</span>
-                    <span>View on GitHub</span>
-                </a>
-            </div>
-        </div>
-        <!-- Phone visual -->
-        <div class="hero-visual">
-            <div class="hero-phone-glow"></div>
-            <div class="eq-decoration eq-decoration--tr" aria-hidden="true">
-                <div class="eq-bar" style="height:28px"></div><div class="eq-bar" style="height:36px"></div>
-                <div class="eq-bar" style="height:20px"></div><div class="eq-bar" style="height:32px"></div>
-                <div class="eq-bar" style="height:24px"></div><div class="eq-bar" style="height:36px"></div>
-                <div class="eq-bar" style="height:18px"></div><div class="eq-bar" style="height:30px"></div>
-            </div>
-            <div class="hero-phone-card">
-                <img src="imgs/hero-showcase.png" alt="SnapTune App Showcase" loading="eager">
-            </div>
-            <div class="eq-decoration eq-decoration--bl" aria-hidden="true">
-                <div class="eq-bar" style="height:24px"></div><div class="eq-bar" style="height:36px"></div>
-                <div class="eq-bar" style="height:28px"></div><div class="eq-bar" style="height:16px"></div>
-                <div class="eq-bar" style="height:32px"></div><div class="eq-bar" style="height:22px"></div>
-            </div>
-    </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee-section" aria-hidden="true">
-    <div class="marquee-track">
-        <span class="marquee-item"><span class="material-symbols-outlined">download_for_offline</span>Offline Downloads</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">groups</span>SnapTune Together</span>
-        <span class="marquee-item"><i class="bi bi-spotify" style="font-size:16px"></i>Spotify Account &amp; Playlists</span>
-        <span class="marquee-item"><i class="bi bi-discord" style="font-size:16px"></i>Discord Rich Presence</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">lyrics</span>Live Synced Lyrics</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">palette</span>50+ Themes</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">headphones</span>Background Playback</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">equalizer</span>Built-in Equalizer</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">sync</span>YouTube Music Sync</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">tune</span>Deep Customization</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">download_for_offline</span>Offline Downloads</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">groups</span>SnapTune Together</span>
-        <span class="marquee-item"><i class="bi bi-spotify" style="font-size:16px"></i>Spotify Account &amp; Playlists</span>
-        <span class="marquee-item"><i class="bi bi-discord" style="font-size:16px"></i>Discord Rich Presence</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">lyrics</span>Live Synced Lyrics</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">palette</span>50+ Themes</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">headphones</span>Background Playback</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">equalizer</span>Built-in Equalizer</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">sync</span>YouTube Music Sync</span>
-        <span class="marquee-item"><span class="material-symbols-outlined">tune</span>Deep Customization</span>
-    </div>
-</div>
-
-<!-- FEATURES BENTO -->
-<section id="features" class="relative px-6 py-24 overflow-hidden">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16 reveal">
-            <p class="section-eyebrow justify-center" data-i18n="features_title">Features</p>
-            <h2 class="section-title">Everything You Need.<br>Nothing You Don't.</h2>
-            <p class="section-sub mx-auto text-center" data-i18n="features_subtitle">Discover all the powerful capabilities that make SnapTune the ultimate music streaming client.</p>
-        </div>
-        <div class="bento-grid reveal-stagger">
-            <!-- ROW 1: EQUAL / EQUAL (50% / 50%) -->
-            <!-- 1 SnapTune Together -->
-            <div class="bento-card bento-6">
-                <div class="feat-icon feat-icon--together"><span class="material-symbols-outlined">groups</span></div>
-                <h3 class="feat-title">SnapTune Together</h3>
-                <p class="feat-desc">Create private listening rooms and connect with friends. Stream music together in real-time with synchronized playback, shared playlist queues, and party controls.</p>
-                <span class="feat-tag"><span class="material-symbols-outlined" style="font-size:14px">wifi_tethering</span> Live Listening Rooms</span>
-            </div>
-            <!-- 2 Spotify Account Integration -->
-            <div class="bento-card bento-6">
-                <div class="feat-icon feat-icon--spotify"><i class="bi bi-spotify" style="font-size:24px;line-height:1"></i></div>
-                <h3 class="feat-title">Spotify Account Integration</h3>
-                <p class="feat-desc">Log in with your Spotify account directly inside SnapTune to get instant access to all your personal playlists, saved albums, and liked songs ad-free.</p>
-                <span class="feat-tag" style="background:rgba(30,215,96,.1);border-color:rgba(30,215,96,.22);color:#1ED760"><i class="bi bi-check2-circle" style="font-size:13px"></i> Direct Playlist Access</span>
-            </div>
-
-            <!-- ROW 2: 35% / 65% -->
-            <!-- 3 Discord Rich Presence (35%) -->
-            <div class="bento-card bento-35">
-                <div class="feat-icon feat-icon--discord"><i class="bi bi-discord" style="font-size:24px;line-height:1"></i></div>
-                <h3 class="feat-title">Discord RPC</h3>
-                <p class="feat-desc">Broadcast what you're listening to in real-time. Displays live track titles, album art, and playback status directly on your Discord profile.</p>
-                <span class="feat-tag" style="background:rgba(88,101,242,.1);border-color:rgba(88,101,242,.22);color:#7289DA"><i class="bi bi-broadcast" style="font-size:13px"></i> Live Status</span>
-            </div>
-            <!-- 4 Offline Downloads (65%) -->
-            <div class="bento-card bento-card--feat bento-65">
-                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                    <div class="flex-1">
-                        <div class="feat-icon feat-icon--p"><span class="material-symbols-outlined">download_for_offline</span></div>
-                        <h3 class="feat-title">Offline Downloads &amp; Background Playback</h3>
-                        <p class="feat-desc">Cache your favourite tracks with configurable audio quality, smart storage management, and continuous background playback when your screen is off or the app is minimized.</p>
-                        <span class="feat-tag"><span class="material-symbols-outlined" style="font-size:14px">offline_pin</span> Zero buffering offline</span>
-                    </div>
-                    <div class="card-eq" aria-hidden="true" style="margin-top:0">
-                        <div class="eq-bar" style="height:24px;--d:.8s"></div><div class="eq-bar" style="height:36px;--d:.6s"></div>
-                        <div class="eq-bar" style="height:20px;--d:1s"></div><div class="eq-bar" style="height:32px;--d:.7s"></div>
-                        <div class="eq-bar" style="height:26px;--d:.9s"></div><div class="eq-bar" style="height:38px;--d:.5s"></div>
-                        <div class="eq-bar" style="height:18px;--d:.85s"></div><div class="eq-bar" style="height:30px;--d:.65s"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ROW 3: 65% / 35% -->
-            <!-- 5 Built-in Equalizer & DSP (65%) -->
-            <div class="bento-card bento-card--feat bento-65">
-                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                    <div class="flex-1">
-                        <div class="feat-icon feat-icon--q"><span class="material-symbols-outlined">equalizer</span></div>
-                        <h3 class="feat-title">Built-in Equalizer &amp; DSP Audio Engine</h3>
-                        <p class="feat-desc" style="max-width:560px">Fine-tune your sound with a parametric equalizer, audio normalization, tempo &amp; pitch control, skip silence, and bass boost — studio-quality audio processing tailored for Android.</p>
-                        <span class="feat-tag"><span class="material-symbols-outlined" style="font-size:14px">graphic_eq</span> Parametric EQ &amp; Bass Boost</span>
-                    </div>
-                    <div class="flex items-end gap-2 self-end md:self-auto" aria-hidden="true" style="height:68px">
-                        <div class="eq-bar" style="height:35px;width:7px;border-radius:4px;--d:.7s"></div>
-                        <div class="eq-bar" style="height:55px;width:7px;border-radius:4px;--d:.5s"></div>
-                        <div class="eq-bar" style="height:42px;width:7px;border-radius:4px;--d:.9s"></div>
-                        <div class="eq-bar" style="height:65px;width:7px;border-radius:4px;--d:.6s"></div>
-                        <div class="eq-bar" style="height:48px;width:7px;border-radius:4px;--d:.8s"></div>
-                        <div class="eq-bar" style="height:60px;width:7px;border-radius:4px;--d:1s"></div>
-                        <div class="eq-bar" style="height:38px;width:7px;border-radius:4px;--d:.7s"></div>
-                        <div class="eq-bar" style="height:50px;width:7px;border-radius:4px;--d:.55s"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- 6 YouTube Music Cloud Sync (35%) -->
-            <div class="bento-card bento-35">
-                <div class="feat-icon feat-icon--p"><span class="material-symbols-outlined">sync</span></div>
-                <h3 class="feat-title">YouTube Music Sync</h3>
-                <p class="feat-desc">Log in securely to sync your playlists, liked tracks, saved albums, and artist subscriptions without ads or telemetry.</p>
-                <span class="feat-tag"><span class="material-symbols-outlined" style="font-size:14px">cloud_done</span> 2-Way Library Sync</span>
-            </div>
-
-            <!-- ROW 4: LAST ROW EQUAL (50% / 50%) -->
-            <!-- 7 Live Synced Lyrics & Translation -->
-            <div class="bento-card bento-6">
-                <div class="feat-icon feat-icon--t"><span class="material-symbols-outlined">lyrics</span></div>
-                <h3 class="feat-title">Live Synced Lyrics &amp; Translation</h3>
-                <p class="feat-desc">Word-by-word synchronized lyrics with real-time translation into your native language right inside the player — feel every beat on screen or lock screen.</p>
-                <span class="feat-tag"><span class="material-symbols-outlined" style="font-size:14px">translate</span> Real-Time Synced &amp; Translated</span>
-            </div>
-            <!-- 8 Themeable Material 3 & Customization -->
-            <div class="bento-card bento-card--feat bento-6">
-                <div class="flex items-start justify-between">
-                    <div>
-                        <div class="feat-icon feat-icon--p"><span class="material-symbols-outlined">palette</span></div>
-                        <h3 class="feat-title">Themeable Material 3 &amp; Customization</h3>
-                        <p class="feat-desc" style="max-width:380px">Light, dark, AMOLED black, and dynamic expressive themes. Tailor every pixel — player layouts, navigation styles, typography, and UI toggles.</p>
-                        <span class="feat-tag"><span class="material-symbols-outlined" style="font-size:14px">tune</span> 50+ Themes &amp; Custom Toggles</span>
-                    </div>
-                    <span class="feat-big-num hidden sm:block">50+</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="px-6 py-24 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto">
-        <div class="about-card reveal">
-            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-12 relative z-10">
-                <div class="max-w-xl">
-                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6" data-i18n="about_chip">PREMIUM EXPERIENCE</span>
-                    <h2 class="section-title" data-i18n="about_title">Crafted for True Music Enthusiasts</h2>
-                    <p class="section-sub mb-8" data-i18n="about_desc">SnapTune is engineered to deliver an exceptional, ad-free music streaming experience on Android. Enjoy background listening, offline downloads, synced lyrics, and full interface personalization.</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="btn-primary">
-                            <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;font-size:18px">star</span>
-                            <span data-i18n="about_star">View on GitHub</span>
-                        </a>
-                        <div class="btn-ghost" style="cursor:default">
-                            <span class="material-symbols-outlined text-tertiary">android</span>
-                            <span>Android 8.0+</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4 w-full max-w-sm">
-                    <div class="contributor-card">
-                        <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border border-white/10">
-                            <img src="https://avatars.githubusercontent.com/u/149857451?v=4" class="w-full h-full object-cover" alt="Farhan Ansari">
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-1">
-                                <span class="material-symbols-outlined text-secondary" style="font-size:18px">verified</span>
-                                <a href="https://github.com/farhanansari888" target="_blank" rel="noopener noreferrer" class="text-on-surface font-bold text-sm hover:text-primary transition-colors">Farhan Ansari</a>
-                            </div>
-                            <p class="text-on-surface-variant text-xs">Creator &amp; Lead Developer</p>
-                        </div>
-                    </div>
-                    <div class="contributor-card">
-                        <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center flex-shrink-0">
-                            <span class="material-symbols-outlined text-primary">new_releases</span>
-                        </div>
-                        <div>
-                            <p class="text-on-surface font-bold text-sm" data-i18n="about_version_title">Latest Stable Version</p>
-                            <p id="oss-version-badge" class="text-primary font-black text-sm mt-0.5">v2.0.0</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- SCREENSHOTS -->
-<section id="screenshots" class="px-6 py-24" style="background:rgba(12,11,24,.5)">
-    <div class="max-w-7xl mx-auto">
-        <div class="mb-12 reveal">
-            <div class="flex items-center justify-between cursor-pointer" id="screenshots-header">
-                <div>
-                    <p class="section-eyebrow">App Gallery</p>
-                    <h2 class="section-title" data-i18n="shots_title">See It In Action</h2>
-                    <p class="section-sub" data-i18n="shots_subtitle">Beautiful, intuitive interface designed for music lovers.</p>
-                </div>
-                <button id="screenshots-toggle" class="w-12 h-12 rounded-full flex items-center justify-center bg-surface-container-high hover:bg-surface-container-highest transition-colors border border-white/5 flex-shrink-0" aria-label="Expand/Collapse screenshots">
-                    <span id="screenshots-icon" class="material-symbols-outlined text-on-surface-variant rotated">expand_more</span>
+                <button id="nav-hamburger" class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
                 </button>
             </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu-inner">
+            <a href="#features" class="mobile-menu-link" data-i18n="nav_features">Features</a>
+            <a href="#screenshots" class="mobile-menu-link" data-i18n="nav_screenshots">Screenshots</a>
+            <a href="#downloads" class="mobile-menu-link" data-i18n="nav_downloads">Downloads</a>
+            <a href="privacy.html" class="mobile-menu-link" data-i18n="nav_privacy">Privacy</a>
+            <a href="donate.html" class="mobile-menu-link" data-i18n="nav_donate">Donate</a>
+            <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="mobile-menu-link">GitHub</a>
+            <div class="mobile-menu-actions">
+                <button class="btn-ghost" style="width:100%;justify-content:center"
+                    onclick="document.getElementById('language-dialog').showModal();document.getElementById('mobile-menu').classList.remove('is-open')">
+                    <span class="material-symbols-outlined">language</span> Change Language
+                </button>
+                <a href="#downloads" class="btn-primary" style="width:100%;justify-content:center">
+                    <span class="material-symbols-outlined">download</span>
+                    <span data-i18n="nav_download_btn">Download</span>
+                </a>
+            </div>
         </div>
-        <div id="screenshots-content" class="transition-all duration-300 ease-in-out overflow-hidden" style="max-height:2000px">
-            <div class="screenshots-shell">
-                <div class="screenshots-carousel-layout">
-                    <div>
-                        <div class="flex flex-wrap items-start justify-between gap-4 mb-6">
-                            <div class="max-w-xl">
-                                <span class="screenshots-chip inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold">
-                                    <span class="material-symbols-outlined" style="font-size:18px">photo_library</span> Material 3 Expressive
-                                </span>
-                                <h3 id="screenshots-title" class="font-bold text-2xl text-on-surface mt-4" style="font-family:Epilogue,sans-serif">Music Player</h3>
-                                <p id="screenshots-description" class="text-on-surface-variant mt-2 text-sm leading-relaxed">Album artwork focus, expanded controls, and a visual hierarchy focused on the music.</p>
-                            </div>
-                            <div class="text-right flex-shrink-0">
-                                <p class="text-on-surface-variant text-xs uppercase tracking-widest font-semibold" data-i18n="shots_active">Active View</p>
-                                <p id="screenshots-current-index" class="font-black text-4xl text-secondary mt-1" style="font-family:Epilogue,sans-serif">01</p>
-                            </div>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-inner">
+                <div class="text-center lg:text-left">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"><span class="material-symbols-outlined">verified</span></span>
+                        Crafted by Farhan Ansari
+                    </div>
+                    <h1 id="hero-heading" class="hero-title">
+                        Music Freedom
+                        <span class="gradient-text">with SnapTune</span>
+                    </h1>
+                    <p class="hero-sub" data-i18n="hero_subtitle">Ad-free streaming, background play, and offline music
+                        wrapped in Material 3.</p>
+                    <div class="hero-stats justify-center lg:justify-start">
+                        <div class="hero-stat-chip">
+                            <span class="hero-stat-icon text-primary material-symbols-outlined">new_releases</span>
+                            <div class="text-left"><span class="hero-stat-label">Latest Release</span><span
+                                    id="hero-version-tag" class="hero-stat-value">v2.0.0</span></div>
                         </div>
-                        <div class="screenshots-stage">
-                            <button id="screenshots-prev" type="button" class="screenshots-nav-button" aria-label="View previous screenshot"><span class="material-symbols-outlined">chevron_left</span></button>
-                            <div class="screenshots-viewport">
-                                <div id="screenshots-track" class="screenshots-track">
-                                    <article class="screenshots-slide ambient-glow" data-title="Music Player" data-description="Album artwork focus, expanded playback controls, and a clean visual hierarchy.">
-                                        <div class="screenshots-device-frame"><img alt="Music Player Screen" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/1-dark.png" loading="lazy"></div>
-                                    </article>
-                                    <article class="screenshots-slide ambient-glow" data-title="Live Synced Lyrics" data-description="Synchronized word-by-word lyrics with real-time translation support.">
-                                        <div class="screenshots-device-frame"><img alt="Live Lyrics Screen" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/5.png" loading="lazy"></div>
-                                    </article>
-                                    <article class="screenshots-slide ambient-glow" data-title="Theme Customization" data-description="50+ built-in themes with dynamic Material 3 and AMOLED black styling.">
-                                        <div class="screenshots-device-frame"><img alt="Theme Customization Screen" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/9.png" loading="lazy"></div>
-                                    </article>
-                                    <article class="screenshots-slide ambient-glow" data-title="Search &amp; Discovery" data-description="Fast search across songs, artists, albums, and personalized Quick Picks.">
-                                        <div class="screenshots-device-frame"><img alt="Search Interface Screen" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/11.png" loading="lazy"></div>
-                                    </article>
-                                    <article class="screenshots-slide ambient-glow" data-title="Settings &amp; Sound" data-description="Built-in equalizer, audio normalization, tempo &amp; pitch controls, and cache management.">
-                                        <div class="screenshots-device-frame"><img alt="Settings Screen" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/acc.png" loading="lazy"></div>
-                                    </article>
-                                </div>
-                            </div>
-                            <button id="screenshots-next" type="button" class="screenshots-nav-button" aria-label="View next screenshot"><span class="material-symbols-outlined">chevron_right</span></button>
+                        <div class="hero-stat-chip">
+                            <span class="hero-stat-icon text-tertiary material-symbols-outlined">android</span>
+                            <div class="text-left"><span class="hero-stat-label">Compatibility</span><span
+                                    class="hero-stat-value">Android 8.0+</span></div>
                         </div>
-                        <div class="screenshots-footer">
-                            <div id="screenshots-indicators" class="screenshots-indicators" role="tablist" aria-label="Screenshot navigation"></div>
-                            <p class="text-on-surface-variant text-xs" data-i18n="shots_hint">Swipe or click controls to switch views.</p>
+                        <div class="hero-stat-chip">
+                            <span class="hero-stat-icon text-secondary material-symbols-outlined">palette</span>
+                            <div class="text-left"><span class="hero-stat-label">Themes Available</span><span
+                                    class="hero-stat-value">50+</span></div>
                         </div>
                     </div>
-                    <aside class="screenshots-preview-rail" aria-label="Screenshot preview rail">
-                        <button type="button" class="screenshots-preview-card is-active" data-screenshot-index="0">
-                            <div class="screenshots-preview-thumb"><img alt="Player preview" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/1-dark.png" loading="lazy"></div>
-                            <div><p class="font-bold text-sm text-on-surface">Music Player</p><p class="text-on-surface-variant text-xs mt-1">Immersive playback.</p></div>
-                        </button>
-                        <button type="button" class="screenshots-preview-card" data-screenshot-index="1">
-                            <div class="screenshots-preview-thumb"><img alt="Lyrics preview" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/5.png" loading="lazy"></div>
-                            <div><p class="font-bold text-sm text-on-surface">Live Lyrics</p><p class="text-on-surface-variant text-xs mt-1">Synced &amp; translated.</p></div>
-                        </button>
-                        <button type="button" class="screenshots-preview-card" data-screenshot-index="2">
-                            <div class="screenshots-preview-thumb"><img alt="Themes preview" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/9.png" loading="lazy"></div>
-                            <div><p class="font-bold text-sm text-on-surface">50+ Themes</p><p class="text-on-surface-variant text-xs mt-1">Deep personalization.</p></div>
-                        </button>
-                        <button type="button" class="screenshots-preview-card" data-screenshot-index="3">
-                            <div class="screenshots-preview-thumb"><img alt="Search preview" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/resources/imgs/11.png" loading="lazy"></div>
-                            <div><p class="font-bold text-sm text-on-surface">Search &amp; Picks</p><p class="text-on-surface-variant text-xs mt-1">Music discovery.</p></div>
-                        </button>
-                    </aside>
+                    <div class="hero-ctas justify-center lg:justify-start">
+                        <a id="hero-download-btn" href="#downloads" class="btn-primary">
+                            <span class="material-symbols-outlined">download</span>
+                            <span data-i18n="hero_download_apk">Download APK</span>
+                        </a>
+                        <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="btn-ghost">
+                            <span class="material-symbols-outlined">code</span>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
                 </div>
+                <!-- Phone visual -->
+                <div class="hero-visual">
+                    <div class="hero-phone-glow"></div>
+                    <div class="eq-decoration eq-decoration--tr" aria-hidden="true">
+                        <div class="eq-bar" style="height:28px"></div>
+                        <div class="eq-bar" style="height:36px"></div>
+                        <div class="eq-bar" style="height:20px"></div>
+                        <div class="eq-bar" style="height:32px"></div>
+                        <div class="eq-bar" style="height:24px"></div>
+                        <div class="eq-bar" style="height:36px"></div>
+                        <div class="eq-bar" style="height:18px"></div>
+                        <div class="eq-bar" style="height:30px"></div>
+                    </div>
+                    <div class="hero-phone-card">
+                        <img src="imgs/hero-showcase.png" alt="SnapTune App Showcase" loading="eager">
+                    </div>
+                    <div class="eq-decoration eq-decoration--bl" aria-hidden="true">
+                        <div class="eq-bar" style="height:24px"></div>
+                        <div class="eq-bar" style="height:36px"></div>
+                        <div class="eq-bar" style="height:28px"></div>
+                        <div class="eq-bar" style="height:16px"></div>
+                        <div class="eq-bar" style="height:32px"></div>
+                        <div class="eq-bar" style="height:22px"></div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee-section" aria-hidden="true">
+            <div class="marquee-track">
+                <span class="marquee-item"><span class="material-symbols-outlined">download_for_offline</span>Offline
+                    Downloads</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">groups</span>SnapTune Together</span>
+                <span class="marquee-item"><i class="bi bi-spotify" style="font-size:16px"></i>Spotify Account &amp;
+                    Playlists</span>
+                <span class="marquee-item"><i class="bi bi-discord" style="font-size:16px"></i>Discord Rich
+                    Presence</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">lyrics</span>Live Synced
+                    Lyrics</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">palette</span>50+ Themes</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">headphones</span>Background
+                    Playback</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">equalizer</span>Built-in
+                    Equalizer</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">sync</span>YouTube Music Sync</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">tune</span>Deep Customization</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">download_for_offline</span>Offline
+                    Downloads</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">groups</span>SnapTune Together</span>
+                <span class="marquee-item"><i class="bi bi-spotify" style="font-size:16px"></i>Spotify Account &amp;
+                    Playlists</span>
+                <span class="marquee-item"><i class="bi bi-discord" style="font-size:16px"></i>Discord Rich
+                    Presence</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">lyrics</span>Live Synced
+                    Lyrics</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">palette</span>50+ Themes</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">headphones</span>Background
+                    Playback</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">equalizer</span>Built-in
+                    Equalizer</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">sync</span>YouTube Music Sync</span>
+                <span class="marquee-item"><span class="material-symbols-outlined">tune</span>Deep Customization</span>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- SUPPORT -->
-<section class="px-6 py-20">
-    <div class="max-w-2xl mx-auto reveal">
-        <div class="support-card">
-            <div class="support-icon-wrap"><span class="material-symbols-outlined">support_agent</span></div>
-            <h2 class="section-title" data-i18n="support_title">Need Help?</h2>
-            <p class="section-sub mx-auto text-center mb-8" data-i18n="support_desc">Submit a request or report an issue directly to Farhan Ansari on GitHub.</p>
-            <a class="btn-primary" href="https://github.com/farhanansari888/SnapTune/issues" target="_blank" rel="noopener noreferrer" style="display:inline-flex;margin:0 auto">
-                <span class="material-symbols-outlined">send</span>
-                <span data-i18n="support_btn">Get Help</span>
-            </a>
-        </div>
-    </div>
-</section>
+        <!-- FEATURES BENTO -->
+        <section id="features" class="relative px-6 py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16 reveal">
+                    <p class="section-eyebrow justify-center" data-i18n="features_title">Features</p>
+                    <h2 class="section-title">Everything You Need.<br>Nothing You Don't.</h2>
+                    <p class="section-sub mx-auto text-center" data-i18n="features_subtitle">Discover all the powerful
+                        capabilities that make SnapTune the ultimate music streaming client.</p>
+                </div>
+                <div class="bento-grid reveal-stagger">
+                    <!-- ROW 1: EQUAL / EQUAL (50% / 50%) -->
+                    <!-- 1 SnapTune Together -->
+                    <div class="bento-card bento-6">
+                        <div class="feat-icon feat-icon--together"><span class="material-symbols-outlined">groups</span>
+                        </div>
+                        <h3 class="feat-title">SnapTune Together</h3>
+                        <p class="feat-desc">Create private listening rooms and connect with friends. Stream music
+                            together in real-time with synchronized playback, shared playlist queues, and party
+                            controls.</p>
+                        <span class="feat-tag"><span class="material-symbols-outlined"
+                                style="font-size:14px">wifi_tethering</span> Live Listening Rooms</span>
+                    </div>
+                    <!-- 2 Spotify Account Integration -->
+                    <div class="bento-card bento-6">
+                        <div class="feat-icon feat-icon--spotify"><i class="bi bi-spotify"
+                                style="font-size:24px;line-height:1"></i></div>
+                        <h3 class="feat-title">Spotify Account Integration</h3>
+                        <p class="feat-desc">Log in with your Spotify account directly inside SnapTune to get instant
+                            access to all your personal playlists, saved albums, and liked songs ad-free.</p>
+                        <span class="feat-tag"
+                            style="background:rgba(30,215,96,.1);border-color:rgba(30,215,96,.22);color:#1ED760"><i
+                                class="bi bi-check2-circle" style="font-size:13px"></i> Direct Playlist Access</span>
+                    </div>
 
-<!-- DOWNLOADS -->
-<section id="downloads" class="px-6 py-24" style="background:rgba(12,11,24,.5)">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16 reveal">
-            <p class="section-eyebrow justify-center" data-i18n="downloads_title">Get SnapTune</p>
-            <h2 class="section-title">Download &amp; Install</h2>
-            <p class="section-sub mx-auto text-center" data-i18n="downloads_subtitle">Choose the download version that is right for you.</p>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 reveal-stagger">
-            <!-- Direct APK -->
-            <div class="download-card">
-                <div class="download-icon-wrap" style="background:rgba(110,233,223,.12);color:var(--t)"><span class="material-symbols-outlined">android</span></div>
-                <h3 class="font-bold text-xl text-on-surface mb-2" style="font-family:Epilogue,sans-serif">Direct APK</h3>
-                <p class="text-on-surface-variant text-sm mb-6" data-i18n="android_card_sub">Production-ready build, thoroughly tested and optimized for daily use.</p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="version-chip version-chip--stable" data-i18n="android_stable_chip">Recommended Build</span>
-                    <span id="android-version-badge" class="version-chip font-bold">v2.0.0</span>
+                    <!-- ROW 2: 35% / 65% -->
+                    <!-- 3 Discord Rich Presence (35%) -->
+                    <div class="bento-card bento-35">
+                        <div class="feat-icon feat-icon--discord"><i class="bi bi-discord"
+                                style="font-size:24px;line-height:1"></i></div>
+                        <h3 class="feat-title">Discord RPC</h3>
+                        <p class="feat-desc">Broadcast what you're listening to in real-time. Displays live track
+                            titles, album art, and playback status directly on your Discord profile.</p>
+                        <span class="feat-tag"
+                            style="background:rgba(88,101,242,.1);border-color:rgba(88,101,242,.22);color:#7289DA"><i
+                                class="bi bi-broadcast" style="font-size:13px"></i> Live Status</span>
+                    </div>
+                    <!-- 4 Offline Downloads (65%) -->
+                    <div class="bento-card bento-card--feat bento-65">
+                        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                            <div class="flex-1">
+                                <div class="feat-icon feat-icon--p"><span
+                                        class="material-symbols-outlined">download_for_offline</span></div>
+                                <h3 class="feat-title">Offline Downloads &amp; Background Playback</h3>
+                                <p class="feat-desc">Cache your favourite tracks with configurable audio quality, smart
+                                    storage management, and continuous background playback when your screen is off or
+                                    the app is minimized.</p>
+                                <span class="feat-tag"><span class="material-symbols-outlined"
+                                        style="font-size:14px">offline_pin</span> Zero buffering offline</span>
+                            </div>
+                            <div class="card-eq" aria-hidden="true" style="margin-top:0">
+                                <div class="eq-bar" style="height:24px;--d:.8s"></div>
+                                <div class="eq-bar" style="height:36px;--d:.6s"></div>
+                                <div class="eq-bar" style="height:20px;--d:1s"></div>
+                                <div class="eq-bar" style="height:32px;--d:.7s"></div>
+                                <div class="eq-bar" style="height:26px;--d:.9s"></div>
+                                <div class="eq-bar" style="height:38px;--d:.5s"></div>
+                                <div class="eq-bar" style="height:18px;--d:.85s"></div>
+                                <div class="eq-bar" style="height:30px;--d:.65s"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROW 3: 65% / 35% -->
+                    <!-- 5 Built-in Equalizer & DSP (65%) -->
+                    <div class="bento-card bento-card--feat bento-65">
+                        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                            <div class="flex-1">
+                                <div class="feat-icon feat-icon--q"><span
+                                        class="material-symbols-outlined">equalizer</span></div>
+                                <h3 class="feat-title">Built-in Equalizer &amp; DSP Audio Engine</h3>
+                                <p class="feat-desc" style="max-width:560px">Fine-tune your sound with a parametric
+                                    equalizer, audio normalization, tempo &amp; pitch control, skip silence, and bass
+                                    boost — studio-quality audio processing tailored for Android.</p>
+                                <span class="feat-tag"><span class="material-symbols-outlined"
+                                        style="font-size:14px">graphic_eq</span> Parametric EQ &amp; Bass Boost</span>
+                            </div>
+                            <div class="flex items-end gap-2 self-end md:self-auto" aria-hidden="true"
+                                style="height:68px">
+                                <div class="eq-bar" style="height:35px;width:7px;border-radius:4px;--d:.7s"></div>
+                                <div class="eq-bar" style="height:55px;width:7px;border-radius:4px;--d:.5s"></div>
+                                <div class="eq-bar" style="height:42px;width:7px;border-radius:4px;--d:.9s"></div>
+                                <div class="eq-bar" style="height:65px;width:7px;border-radius:4px;--d:.6s"></div>
+                                <div class="eq-bar" style="height:48px;width:7px;border-radius:4px;--d:.8s"></div>
+                                <div class="eq-bar" style="height:60px;width:7px;border-radius:4px;--d:1s"></div>
+                                <div class="eq-bar" style="height:38px;width:7px;border-radius:4px;--d:.7s"></div>
+                                <div class="eq-bar" style="height:50px;width:7px;border-radius:4px;--d:.55s"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 YouTube Music Cloud Sync (35%) -->
+                    <div class="bento-card bento-35">
+                        <div class="feat-icon feat-icon--p"><span class="material-symbols-outlined">sync</span></div>
+                        <h3 class="feat-title">YouTube Music Sync</h3>
+                        <p class="feat-desc">Log in securely to sync your playlists, liked tracks, saved albums, and
+                            artist subscriptions without ads or telemetry.</p>
+                        <span class="feat-tag"><span class="material-symbols-outlined"
+                                style="font-size:14px">cloud_done</span> 2-Way Library Sync</span>
+                    </div>
+
+                    <!-- ROW 4: LAST ROW EQUAL (50% / 50%) -->
+                    <!-- 7 Live Synced Lyrics & Translation -->
+                    <div class="bento-card bento-6">
+                        <div class="feat-icon feat-icon--t"><span class="material-symbols-outlined">lyrics</span></div>
+                        <h3 class="feat-title">Live Synced Lyrics &amp; Translation</h3>
+                        <p class="feat-desc">Word-by-word synchronized lyrics with real-time translation into your
+                            native language right inside the player — feel every beat on screen or lock screen.</p>
+                        <span class="feat-tag"><span class="material-symbols-outlined"
+                                style="font-size:14px">translate</span> Real-Time Synced &amp; Translated</span>
+                    </div>
+                    <!-- 8 Themeable Material 3 & Customization -->
+                    <div class="bento-card bento-card--feat bento-6">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <div class="feat-icon feat-icon--p"><span
+                                        class="material-symbols-outlined">palette</span></div>
+                                <h3 class="feat-title">Themeable Material 3 &amp; Customization</h3>
+                                <p class="feat-desc" style="max-width:380px">Light, dark, AMOLED black, and dynamic
+                                    expressive themes. Tailor every pixel — player layouts, navigation styles,
+                                    typography, and UI toggles.</p>
+                                <span class="feat-tag"><span class="material-symbols-outlined"
+                                        style="font-size:14px">tune</span> 50+ Themes &amp; Custom Toggles</span>
+                            </div>
+                            <span class="feat-big-num hidden sm:block">50+</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-wrap gap-6 mb-8">
-                    <button id="changelog-trigger" class="flex items-center gap-2 text-primary hover:text-on-primary-container transition-colors font-semibold text-sm">
-                        <span class="material-symbols-outlined" style="font-size:18px">list_alt</span><span data-i18n="view_changelog">View Changelog</span>
-                    </button>
-                    <button id="versions-trigger" class="flex items-center gap-2 text-primary hover:text-on-primary-container transition-colors font-semibold text-sm">
-                        <span class="material-symbols-outlined" style="font-size:18px">history</span><span data-i18n="previous_versions">Previous Versions</span>
-                    </button>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="px-6 py-24 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="about-card reveal">
+                    <div
+                        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-12 relative z-10">
+                        <div class="max-w-xl">
+                            <span
+                                class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6"
+                                data-i18n="about_chip">PREMIUM EXPERIENCE</span>
+                            <h2 class="section-title" data-i18n="about_title">Crafted for True Music Enthusiasts</h2>
+                            <p class="section-sub mb-8" data-i18n="about_desc">SnapTune is engineered to deliver an
+                                exceptional, ad-free music streaming experience on Android. Enjoy background listening,
+                                offline downloads, synced lyrics, and full interface personalization.</p>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://github.com/farhanansari888/SnapTune" target="_blank"
+                                    class="btn-primary">
+                                    <span class="material-symbols-outlined"
+                                        style="font-variation-settings:'FILL' 1;font-size:18px">star</span>
+                                    <span data-i18n="about_star">View on GitHub</span>
+                                </a>
+                                <div class="btn-ghost" style="cursor:default">
+                                    <span class="material-symbols-outlined text-tertiary">android</span>
+                                    <span>Android 8.0+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 w-full max-w-sm">
+                            <div class="contributor-card">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="https://avatars.githubusercontent.com/u/149857451?v=4"
+                                        class="w-full h-full object-cover" alt="Farhan Ansari">
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="material-symbols-outlined text-secondary"
+                                            style="font-size:18px">verified</span>
+                                        <a href="https://github.com/farhanansari888" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="text-on-surface font-bold text-sm hover:text-primary transition-colors">Farhan
+                                            Ansari</a>
+                                    </div>
+                                    <p class="text-on-surface-variant text-xs">Creator &amp; Lead Developer</p>
+                                </div>
+                            </div>
+                            <div class="contributor-card">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-primary">new_releases</span>
+                                </div>
+                                <div>
+                                    <p class="text-on-surface font-bold text-sm" data-i18n="about_version_title">Latest
+                                        Stable Version</p>
+                                    <p id="oss-version-badge" class="text-primary font-black text-sm mt-0.5">v2.0.0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 border-t" style="border-color:var(--border)">
-                    <a id="android-download-btn" href="https://github.com/farhanansari888/SnapTune/releases/download/v2.0.0/SnapTune-v2.0.0.apk" target="_blank" class="btn-primary">
-                        <span class="material-symbols-outlined">download</span>
-                        <span id="android-download-text" data-i18n="android_download_text">Download Stable APK</span>
+            </div>
+        </section>
+
+        <!-- SCREENSHOTS -->
+        <section id="screenshots" class="px-6 py-24" style="background:rgba(12,11,24,.5)">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12 reveal">
+                    <div class="flex items-center justify-between cursor-pointer" id="screenshots-header">
+                        <div>
+                            <p class="section-eyebrow">App Gallery</p>
+                            <h2 class="section-title" data-i18n="shots_title">See It In Action</h2>
+                            <p class="section-sub" data-i18n="shots_subtitle">Beautiful, intuitive interface designed
+                                for music lovers.</p>
+                        </div>
+                        <button id="screenshots-toggle"
+                            class="w-12 h-12 rounded-full flex items-center justify-center bg-surface-container-high hover:bg-surface-container-highest transition-colors border border-white/5 flex-shrink-0"
+                            aria-label="Expand/Collapse screenshots">
+                            <span id="screenshots-icon"
+                                class="material-symbols-outlined text-on-surface-variant rotated">expand_more</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="screenshots-content" class="transition-all duration-300 ease-in-out overflow-hidden"
+                    style="max-height:2000px">
+                    <div class="screenshots-shell">
+                        <div class="screenshots-carousel-layout">
+                            <div>
+                                <div class="flex flex-wrap items-start justify-between gap-4 mb-6">
+                                    <div class="max-w-xl">
+                                        <span
+                                            class="screenshots-chip inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold">
+                                            <span class="material-symbols-outlined"
+                                                style="font-size:18px">photo_library</span> Material 3 Expressive
+                                        </span>
+                                        <h3 id="screenshots-title" class="font-bold text-2xl text-on-surface mt-4"
+                                            style="font-family:Epilogue,sans-serif">Music Player</h3>
+                                        <p id="screenshots-description"
+                                            class="text-on-surface-variant mt-2 text-sm leading-relaxed">Album artwork
+                                            focus, expanded controls, and a visual hierarchy focused on the music.</p>
+                                    </div>
+                                    <div class="text-right flex-shrink-0">
+                                        <p class="text-on-surface-variant text-xs uppercase tracking-widest font-semibold"
+                                            data-i18n="shots_active">Active View</p>
+                                        <p id="screenshots-current-index"
+                                            class="font-black text-4xl text-secondary mt-1"
+                                            style="font-family:Epilogue,sans-serif">01</p>
+                                    </div>
+                                </div>
+                                <div class="screenshots-stage">
+                                    <button id="screenshots-prev" type="button" class="screenshots-nav-button"
+                                        aria-label="View previous screenshot"><span
+                                            class="material-symbols-outlined">chevron_left</span></button>
+                                    <div class="screenshots-viewport">
+                                        <div id="screenshots-track" class="screenshots-track">
+                                            <article class="screenshots-slide ambient-glow" data-title="Music Player"
+                                                data-description="Album artwork focus, expanded playback controls, and a clean visual hierarchy.">
+                                                <div class="screenshots-device-frame"><img alt="Music Player Screen"
+                                                        class="w-full h-full object-cover"
+                                                        src="https://raw.githubusercontent.com/farhanansari888/SnapTune/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_7.jpg"
+                                                        loading="lazy"></div>
+                                            </article>
+                                            <article class="screenshots-slide ambient-glow"
+                                                data-title="Live Synced Lyrics"
+                                                data-description="Synchronized word-by-word lyrics with real-time translation support.">
+                                                <div class="screenshots-device-frame"><img alt="Live Lyrics Screen"
+                                                        class="w-full h-full object-cover"
+                                                        src="https://raw.githubusercontent.com/farhanansari888/SnapTune/refs/heads/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_2.jpg"
+                                                        loading="lazy"></div>
+                                            </article>
+                                            <article class="screenshots-slide ambient-glow"
+                                                data-title="Theme Customization"
+                                                data-description="50+ built-in themes with dynamic Material 3 and AMOLED black styling.">
+                                                <div class="screenshots-device-frame"><img
+                                                        alt="Theme Customization Screen"
+                                                        class="w-full h-full object-cover"
+                                                        src="https://raw.githubusercontent.com/farhanansari888/SnapTune/refs/heads/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_10.jpg"
+                                                        loading="lazy"></div>
+                                            </article>
+                                            <article class="screenshots-slide ambient-glow"
+                                                data-title="Search &amp; Discovery"
+                                                data-description="Fast search across songs, artists, albums, and personalized Quick Picks.">
+                                                <div class="screenshots-device-frame"><img alt="Search Interface Screen"
+                                                        class="w-full h-full object-cover"
+                                                        src="https://raw.githubusercontent.com/farhanansari888/SnapTune/refs/heads/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_4.jpg"
+                                                        loading="lazy"></div>
+                                            </article>
+                                            <article class="screenshots-slide ambient-glow"
+                                                data-title="Settings &amp; Sound"
+                                                data-description="Built-in equalizer, audio normalization, tempo &amp; pitch controls, and cache management.">
+                                                <div class="screenshots-device-frame"><img alt="Settings Screen"
+                                                        class="w-full h-full object-cover"
+                                                        src="https://raw.githubusercontent.com/farhanansari888/SnapTune/refs/heads/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_3.jpg"
+                                                        loading="lazy"></div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <button id="screenshots-next" type="button" class="screenshots-nav-button"
+                                        aria-label="View next screenshot"><span
+                                            class="material-symbols-outlined">chevron_right</span></button>
+                                </div>
+                                <div class="screenshots-footer">
+                                    <div id="screenshots-indicators" class="screenshots-indicators" role="tablist"
+                                        aria-label="Screenshot navigation"></div>
+                                    <p class="text-on-surface-variant text-xs" data-i18n="shots_hint">Swipe or click
+                                        controls to switch views.</p>
+                                </div>
+                            </div>
+                            <aside class="screenshots-preview-rail" aria-label="Screenshot preview rail">
+                                <button type="button" class="screenshots-preview-card is-active"
+                                    data-screenshot-index="0">
+                                    <div class="screenshots-preview-thumb"><img alt="Player preview"
+                                            class="w-full h-full object-cover"
+                                            src="https://raw.githubusercontent.com/farhanansari888/SnapTune/refs/heads/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_7.jpg"
+                                            loading="lazy"></div>
+                                    <div>
+                                        <p class="font-bold text-sm text-on-surface">Music Player</p>
+                                        <p class="text-on-surface-variant text-xs mt-1">Immersive playback.</p>
+                                    </div>
+                                </button>
+                                <button type="button" class="screenshots-preview-card" data-screenshot-index="1">
+                                    <div class="screenshots-preview-thumb"><img alt="Lyrics preview"
+                                            class="w-full h-full object-cover"
+                                            src="https://raw.githubusercontent.com/farhanansari888/SnapTune/refs/heads/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_2.jpg"
+                                            loading="lazy"></div>
+                                    <div>
+                                        <p class="font-bold text-sm text-on-surface">Live Lyrics</p>
+                                        <p class="text-on-surface-variant text-xs mt-1">Synced &amp; translated.</p>
+                                    </div>
+                                </button>
+                                <button type="button" class="screenshots-preview-card" data-screenshot-index="2">
+                                    <div class="screenshots-preview-thumb"><img alt="Themes preview"
+                                            class="w-full h-full object-cover"
+                                            src="https://raw.githubusercontent.com/farhanansari888/SnapTune/refs/heads/main/fastlane/metadata/android/en-US/images/phoneScreenshots/screenshot_10.jpg"
+                                            loading="lazy"></div>
+                                    <div>
+                                        <p class="font-bold text-sm text-on-surface">50+ Themes</p>
+                                        <p class="text-on-surface-variant text-xs mt-1">Deep personalization.</p>
+                                    </div>
+                                </button>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT -->
+        <section class="px-6 py-20">
+            <div class="max-w-2xl mx-auto reveal">
+                <div class="support-card">
+                    <div class="support-icon-wrap"><span class="material-symbols-outlined">support_agent</span></div>
+                    <h2 class="section-title" data-i18n="support_title">Need Help?</h2>
+                    <p class="section-sub mx-auto text-center mb-8" data-i18n="support_desc">Submit a request or report
+                        an issue directly to Farhan Ansari on GitHub.</p>
+                    <a class="btn-primary" href="https://github.com/farhanansari888/SnapTune/issues" target="_blank"
+                        rel="noopener noreferrer" style="display:inline-flex;margin:0 auto">
+                        <span class="material-symbols-outlined">send</span>
+                        <span data-i18n="support_btn">Get Help</span>
                     </a>
-                    <p class="text-on-surface-variant text-xs font-semibold" data-i18n="android_req">Requires Android 8.0+</p>
                 </div>
             </div>
-            <!-- Uptodown -->
-            <div class="download-card">
-                <div class="download-icon-wrap" style="background:rgba(202,180,255,.12);color:var(--p)"><span class="material-symbols-outlined">storefront</span></div>
-                <h3 class="font-bold text-xl text-on-surface mb-2" style="font-family:Epilogue,sans-serif">Uptodown Store</h3>
-                <p class="text-on-surface-variant text-sm mb-6">Download verified builds through the trusted Uptodown App Store with automatic update notifications.</p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="version-chip version-chip--stable">Verified Distribution</span>
-                    <span class="version-chip">Auto-Updates</span>
+        </section>
+
+        <!-- DOWNLOADS -->
+        <section id="downloads" class="px-6 py-24" style="background:rgba(12,11,24,.5)">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16 reveal">
+                    <p class="section-eyebrow justify-center" data-i18n="downloads_title">Get SnapTune</p>
+                    <h2 class="section-title">Download &amp; Install</h2>
+                    <p class="section-sub mx-auto text-center" data-i18n="downloads_subtitle">Choose the download
+                        version that is right for you.</p>
                 </div>
-                <div class="flex flex-wrap gap-6 mb-8">
-                    <a href="https://github.com/farhanansari888/SnapTune/releases" target="_blank" class="flex items-center gap-2 text-primary hover:text-on-primary-container transition-colors font-semibold text-sm no-underline">
-                        <span class="material-symbols-outlined" style="font-size:18px">launch</span><span>All Releases on GitHub</span>
-                    </a>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 reveal-stagger">
+                    <!-- Direct APK -->
+                    <div class="download-card">
+                        <div class="download-icon-wrap" style="background:rgba(110,233,223,.12);color:var(--t)"><span
+                                class="material-symbols-outlined">android</span></div>
+                        <h3 class="font-bold text-xl text-on-surface mb-2" style="font-family:Epilogue,sans-serif">
+                            Direct APK</h3>
+                        <p class="text-on-surface-variant text-sm mb-6" data-i18n="android_card_sub">Production-ready
+                            build, thoroughly tested and optimized for daily use.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="version-chip version-chip--stable" data-i18n="android_stable_chip">Recommended
+                                Build</span>
+                            <span id="android-version-badge" class="version-chip font-bold">v2.0.0</span>
+                        </div>
+                        <div class="flex flex-wrap gap-6 mb-8">
+                            <button id="changelog-trigger"
+                                class="flex items-center gap-2 text-primary hover:text-on-primary-container transition-colors font-semibold text-sm">
+                                <span class="material-symbols-outlined" style="font-size:18px">list_alt</span><span
+                                    data-i18n="view_changelog">View Changelog</span>
+                            </button>
+                            <button id="versions-trigger"
+                                class="flex items-center gap-2 text-primary hover:text-on-primary-container transition-colors font-semibold text-sm">
+                                <span class="material-symbols-outlined" style="font-size:18px">history</span><span
+                                    data-i18n="previous_versions">Previous Versions</span>
+                            </button>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 border-t"
+                            style="border-color:var(--border)">
+                            <a id="android-download-btn"
+                                href="https://github.com/farhanansari888/SnapTune/releases/download/v2.0.0/SnapTune-v2.0.0.apk"
+                                target="_blank" class="btn-primary">
+                                <span class="material-symbols-outlined">download</span>
+                                <span id="android-download-text" data-i18n="android_download_text">Download Stable
+                                    APK</span>
+                            </a>
+                            <p class="text-on-surface-variant text-xs font-semibold" data-i18n="android_req">Requires
+                                Android 8.0+</p>
+                        </div>
+                    </div>
+                    <!-- Uptodown -->
+                    <div class="download-card">
+                        <div class="download-icon-wrap" style="background:rgba(202,180,255,.12);color:var(--p)"><span
+                                class="material-symbols-outlined">storefront</span></div>
+                        <h3 class="font-bold text-xl text-on-surface mb-2" style="font-family:Epilogue,sans-serif">
+                            Uptodown Store</h3>
+                        <p class="text-on-surface-variant text-sm mb-6">Download verified builds through the trusted
+                            Uptodown App Store with automatic update notifications.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="version-chip version-chip--stable">Verified Distribution</span>
+                            <span class="version-chip">Auto-Updates</span>
+                        </div>
+                        <div class="flex flex-wrap gap-6 mb-8">
+                            <a href="https://github.com/farhanansari888/SnapTune/releases" target="_blank"
+                                class="flex items-center gap-2 text-primary hover:text-on-primary-container transition-colors font-semibold text-sm no-underline">
+                                <span class="material-symbols-outlined" style="font-size:18px">launch</span><span>All
+                                    Releases on GitHub</span>
+                            </a>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 border-t"
+                            style="border-color:var(--border)">
+                            <a href="https://snaptune.en.uptodown.com/android" target="_blank" class="btn-primary">
+                                <span class="material-symbols-outlined">open_in_new</span><span>Download from
+                                    Uptodown</span>
+                            </a>
+                            <p class="text-on-surface-variant text-xs font-semibold">Requires Android 8.0+</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 border-t" style="border-color:var(--border)">
-                    <a href="https://snaptune.en.uptodown.com/android" target="_blank" class="btn-primary">
-                        <span class="material-symbols-outlined">open_in_new</span><span>Download from Uptodown</span>
-                    </a>
-                    <p class="text-on-surface-variant text-xs font-semibold">Requires Android 8.0+</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mb-10">
+                <div class="text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start gap-3 mb-3">
+                        <img src="logo.svg" alt="SnapTune" width="26" height="26" class="rounded-md">
+                        <span class="font-black text-xl"
+                            style="font-family:'Outfit',sans-serif;background:var(--g-pq);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.4px">SnapTune</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm mb-1">Enhanced Music Streaming for Android</p>
+                    <p class="text-xs" style="color:var(--outline)">
+                        Made with <span style="color:#F5B3D0">♥</span> by
+                        <a href="https://github.com/farhanansari888" target="_blank"
+                            class="text-primary hover:underline font-semibold">Farhan Ansari</a>.
+                        <span data-i18n="footer_rights">Not affiliated with YouTube or Google.</span>
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <a href="https://github.com/farhanansari888/SnapTune/releases" target="_blank"
+                        class="footer-chip"><span class="material-symbols-outlined"
+                            style="font-size:15px">new_releases</span> Releases</a>
+                    <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="footer-chip"><span
+                            class="material-symbols-outlined" style="font-size:15px">code</span> GitHub</a>
+                    <a href="https://snaptune.en.uptodown.com/android" target="_blank" class="footer-chip"><span
+                            class="material-symbols-outlined" style="font-size:15px">storefront</span> Uptodown</a>
+                    <a href="https://github.com/farhanansari888/SnapTune/issues" target="_blank"
+                        class="footer-chip"><span class="material-symbols-outlined"
+                            style="font-size:15px">support</span> Issues &amp; Support</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-6"
+                style="border-top:1px solid rgba(184,164,255,.12)">
+                <p class="text-xs" style="color:var(--outline)" data-i18n="footer_license">&copy; 2026 SnapTune. All
+                    Rights Reserved.</p>
+                <div class="flex flex-wrap gap-6 justify-center">
+                    <a href="#features" class="text-xs transition-colors no-underline hover:text-primary"
+                        style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500"
+                        data-i18n="nav_features">Features</a>
+                    <a href="#screenshots" class="text-xs transition-colors no-underline hover:text-primary"
+                        style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500"
+                        data-i18n="nav_screenshots">Screenshots</a>
+                    <a href="#downloads" class="text-xs transition-colors no-underline hover:text-primary"
+                        style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500"
+                        data-i18n="nav_downloads">Downloads</a>
+                    <a href="privacy.html" class="text-xs transition-colors no-underline hover:text-primary"
+                        style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500">Privacy Policy</a>
+                    <a href="donate.html" class="text-xs transition-colors no-underline hover:text-primary"
+                        style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500"
+                        data-i18n="nav_donate">Donate</a>
+                    <a href="https://github.com/farhanansari888/SnapTune" target="_blank"
+                        class="text-xs transition-colors no-underline hover:text-primary"
+                        style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500">GitHub</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-</main>
+    </footer>
 
-<!-- FOOTER -->
-<footer class="site-footer" role="contentinfo">
-    <div class="max-w-7xl mx-auto px-8">
-        <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mb-10">
-            <div class="text-center lg:text-left">
-                <div class="flex items-center justify-center lg:justify-start gap-3 mb-3">
-                    <img src="logo.svg" alt="SnapTune" width="26" height="26" class="rounded-md">
-                    <span class="font-black text-xl" style="font-family:'Outfit',sans-serif;background:var(--g-pq);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.4px">SnapTune</span>
-                </div>
-                <p class="text-on-surface-variant text-sm mb-1">Enhanced Music Streaming for Android</p>
-                <p class="text-xs" style="color:var(--outline)">
-                    Made with <span style="color:#F5B3D0">♥</span> by
-                    <a href="https://github.com/farhanansari888" target="_blank" class="text-primary hover:underline font-semibold">Farhan Ansari</a>.
-                    <span data-i18n="footer_rights">Not affiliated with YouTube or Google.</span>
-                </p>
-            </div>
-            <div class="flex flex-wrap gap-3 justify-center">
-                <a href="https://github.com/farhanansari888/SnapTune/releases" target="_blank" class="footer-chip"><span class="material-symbols-outlined" style="font-size:15px">new_releases</span> Releases</a>
-                <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="footer-chip"><span class="material-symbols-outlined" style="font-size:15px">code</span> GitHub</a>
-                <a href="https://snaptune.en.uptodown.com/android" target="_blank" class="footer-chip"><span class="material-symbols-outlined" style="font-size:15px">storefront</span> Uptodown</a>
-                <a href="https://github.com/farhanansari888/SnapTune/issues" target="_blank" class="footer-chip"><span class="material-symbols-outlined" style="font-size:15px">support</span> Issues &amp; Support</a>
+    <!-- Changelog Dialog -->
+    <dialog id="changelog-dialog" class="glass-dialog glass-dialog--large">
+        <div class="dialog-header">
+            <h3 class="font-bold text-on-surface" style="font-family:Epilogue,sans-serif">Changelog</h3>
+            <button id="close-changelog-btn" class="dialog-icon-btn"
+                onclick="document.getElementById('changelog-dialog').close()" aria-label="Close changelog"><span
+                    class="material-symbols-outlined">close</span></button>
+        </div>
+        <div id="changelog-content" class="dialog-content dialog-content--scroll">
+            <div class="loading-indicator">
+                <div class="circular-progress"></div>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-6" style="border-top:1px solid rgba(184,164,255,.12)">
-            <p class="text-xs" style="color:var(--outline)" data-i18n="footer_license">&copy; 2026 SnapTune. All Rights Reserved.</p>
-            <div class="flex flex-wrap gap-6 justify-center">
-                <a href="#features" class="text-xs transition-colors no-underline hover:text-primary" style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500" data-i18n="nav_features">Features</a>
-                <a href="#screenshots" class="text-xs transition-colors no-underline hover:text-primary" style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500" data-i18n="nav_screenshots">Screenshots</a>
-                <a href="#downloads" class="text-xs transition-colors no-underline hover:text-primary" style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500" data-i18n="nav_downloads">Downloads</a>
-                <a href="privacy.html" class="text-xs transition-colors no-underline hover:text-primary" style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500">Privacy Policy</a>
-                <a href="donate.html" class="text-xs transition-colors no-underline hover:text-primary" style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500" data-i18n="nav_donate">Donate</a>
-                <a href="https://github.com/farhanansari888/SnapTune" target="_blank" class="text-xs transition-colors no-underline hover:text-primary" style="color:var(--on-sv);font-family:'Outfit',sans-serif;font-weight:500">GitHub</a>
+    </dialog>
+
+    <!-- Previous Versions Dialog -->
+    <dialog id="versions-dialog" class="glass-dialog glass-dialog--large">
+        <div class="dialog-header">
+            <h3 class="font-bold text-on-surface" style="font-family:Epilogue,sans-serif">Previous Versions</h3>
+            <button id="close-versions-btn" class="dialog-icon-btn"
+                onclick="document.getElementById('versions-dialog').close()" aria-label="Close versions"><span
+                    class="material-symbols-outlined">close</span></button>
+        </div>
+        <div id="versions-list" class="dialog-content dialog-content--scroll">
+            <div class="loading-indicator">
+                <div class="circular-progress"></div>
             </div>
         </div>
-    </div>
-</footer>
+    </dialog>
 
-<!-- Changelog Dialog -->
-<dialog id="changelog-dialog" class="glass-dialog glass-dialog--large">
-    <div class="dialog-header">
-        <h3 class="font-bold text-on-surface" style="font-family:Epilogue,sans-serif">Changelog</h3>
-        <button id="close-changelog-btn" class="dialog-icon-btn" onclick="document.getElementById('changelog-dialog').close()" aria-label="Close changelog"><span class="material-symbols-outlined">close</span></button>
+    <!-- Toast -->
+    <div id="downloadToast" class="download-toast" role="status" aria-live="polite">
+        <span class="material-symbols-outlined" style="color:var(--p)">cloud_download</span>
+        <span id="downloadToastMessage"></span>
     </div>
-    <div id="changelog-content" class="dialog-content dialog-content--scroll">
-        <div class="loading-indicator"><div class="circular-progress"></div></div>
-    </div>
-</dialog>
 
-<!-- Previous Versions Dialog -->
-<dialog id="versions-dialog" class="glass-dialog glass-dialog--large">
-    <div class="dialog-header">
-        <h3 class="font-bold text-on-surface" style="font-family:Epilogue,sans-serif">Previous Versions</h3>
-        <button id="close-versions-btn" class="dialog-icon-btn" onclick="document.getElementById('versions-dialog').close()" aria-label="Close versions"><span class="material-symbols-outlined">close</span></button>
-    </div>
-    <div id="versions-list" class="dialog-content dialog-content--scroll">
-        <div class="loading-indicator"><div class="circular-progress"></div></div>
-    </div>
-</dialog>
+    <!-- Scroll Reveal Script -->
+    <script>
+        (function () {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal,.reveal-stagger').forEach(function (el) { io.observe(el); });
+        })();
+    </script>
 
-<!-- Toast -->
-<div id="downloadToast" class="download-toast" role="status" aria-live="polite">
-    <span class="material-symbols-outlined" style="color:var(--p)">cloud_download</span>
-    <span id="downloadToastMessage"></span>
-</div>
-
-<!-- Scroll Reveal Script -->
-<script>
-(function(){
-    var io=new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-            if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
-        });
-    },{threshold:0.1});
-    document.querySelectorAll('.reveal,.reveal-stagger').forEach(function(el){io.observe(el);});
-})();
-</script>
-
-<!-- App Script -->
-<script src="js/app.js?v=7.0.2"></script>
+    <!-- App Script -->
+    <script src="js/app.js?v=7.0.2"></script>
 </body>
+
 </html>
