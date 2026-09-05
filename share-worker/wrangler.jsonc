@@ -1,0 +1,14 @@
+{
+  "name": "snaptune-share-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-05-29",
+  "routes": [
+    {
+      "pattern": "play.snaptune.indevs.in",
+      "custom_domain": true
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
